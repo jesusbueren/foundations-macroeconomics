@@ -1,0 +1,35 @@
+# Build output
+/build/
+
+# LaTeX temporary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex*
+*.toc
+*.vrb
+
+# Temporary files
+*.tmp
+~$*
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Credentials
+.env
+.env.*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
