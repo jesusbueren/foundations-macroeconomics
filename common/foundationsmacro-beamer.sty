@@ -1,0 +1,58 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{foundationsmacro-beamer}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage[table]{xcolor}
+\RequirePackage{bookmark}
+
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+
+\definecolor{MacroBlue}{RGB}{20,52,110}
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{title}{fg=MacroBlue}
+\setbeamercolor{subtitle}{fg=MacroBlue!80!black}
+\setbeamercolor{frametitle}{fg=MacroBlue}
+\setbeamercolor{structure}{fg=MacroBlue}
+\setbeamercolor{section in head/foot}{fg=MacroBlue}
+\setbeamercolor{author in head/foot}{fg=MacroBlue}
+\setbeamercolor{title in head/foot}{fg=MacroBlue}
+\setbeamercolor{math text}{fg=MacroBlue}
+
+\setbeamerfont{title}{series=\bfseries,size=\Large}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamerfont{section in head/foot}{size=\tiny}
+\setbeamerfont{author in head/foot}{size=\tiny}
+\setbeamerfont{title in head/foot}{size=\tiny}
+
+\setbeamertemplate{headline}{%
+  \vspace{0.3em}%
+  \hbox to \paperwidth{%
+    \hspace*{1em}%
+    \usebeamerfont{section in head/foot}\insertsectionhead
+    \hfill%
+  }%
+}
+
+\setbeamertemplate{footline}{%
+  \vspace{0.2em}%
+  \hbox to \paperwidth{%
+    \hspace*{1em}%
+    \usebeamerfont{author in head/foot}%
+    \insertshortauthor\ ---\ \insertshorttitle
+    \hfill%
+    \usebeamerfont{title in head/foot}%
+    \insertframenumber/\inserttotalframenumber
+    \hspace*{1em}%
+  }%
+  \vspace{0.3em}%
+}
+
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}{-}
+\setbeamertemplate{itemize subsubitem}[circle]
+
+\newcommand{\itemvso}{\vspace{0.2cm}\item}
+\newcommand{\itemvsoo}{\vspace{0.125cm}\item}
