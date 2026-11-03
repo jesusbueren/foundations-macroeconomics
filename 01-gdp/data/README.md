@@ -24,6 +24,24 @@ Life evaluation is from the
 Figure 2.1. The 2025 observation is the average life evaluation over 2023--2025
 on a 0--10 scale. The script joins it to recent World Bank GDP per capita.
 
+## Human Development Index
+
+`code/make_hdi_figures.py` uses the [UNDP Human Development Report 2025
+composite-indices dataset](https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv).
+Both figures use 2023 observations for the 193 countries with a published HDI
+rank, excluding regional aggregates and unranked territories. The indicators
+are HDI, life expectancy at birth, expected years of schooling, and GNI per
+capita in constant 2021 international dollars (PPP).
+
+Income uses a logarithmic axis. The blue curves are descriptive quadratic fits
+in log income, using log odds for HDI to keep its fitted curve between 0 and 1.
+Portugal is an orange star, selected comparisons are blue, and
+other countries are grey. Both figures label the highest- and lowest-HDI
+countries (Iceland and South Sudan). The component panels also label their
+highest and lowest observations: San Marino and Nigeria for life expectancy,
+and Greece and South Sudan for expected schooling. The raw CSV is cached in
+`data/cache/`; the PDF filenames remain unchanged for the LaTeX slides.
+
 ## Production composition
 
 The production-approach figures use these World Bank indicators:

@@ -1221,14 +1221,16 @@ Wine bottles & 6 & \(120{,}000\ \mathrm{Kz}\)
 \begin{frame}{Beyond GDP — Measuring Development}
 
 \begin{itemize}
-    \item GDP is a powerful indicator of economic activity, but it does not capture everything we care about.
+    \item As we saw in the in the first set of slides, GDP is a powerful indicator of economic activity, but it does not capture everything we care about.
     \itemvso Economic \textbf{development} involves more than production and income:
     \begin{itemize}
         \item Health and life expectancy
         \item Education and literacy
         \item Access to opportunities and basic services
+        \item Inequality and social inclusion
     \end{itemize}
-    \itemvso Now, we discuss alternative ways to measure well-being and living standards.
+    \itemvso In this last section, we discuss two alternative ways to measure well-being and living standards that explain why microfounded models are useful.
+    \itemvso We will first discuss a non microfounded approach, the Human Development Index (HDI), and then a more recent approach by Jones \& Klenow (2016).
 \end{itemize}
 
 \end{frame}
@@ -1282,6 +1284,7 @@ Wine bottles & 6 & \(120{,}000\ \mathrm{Kz}\)
 \itemvso Why convert variables into indices?
 \itemvso Why equal weights on the three factors?
 \end{itemize} 
+\itemvso The weights could even be chosen to make a particular country look good, to receive more tourism or foreign aid.
 \end{itemize}
 \end{frame}
 
@@ -1289,7 +1292,7 @@ Wine bottles & 6 & \(120{,}000\ \mathrm{Kz}\)
 
 \begin{frame}{Beyond GDP: Jones \& Klenow (2016)}
 \begin{itemize}
-  \item Jones \& Klenow propose a \textbf{welfare measure} similar in spirit to the HDI but grounded in \textbf{utility theory}.
+  \item Jones \& Klenow propose instead a \textbf{welfare measure} similar in spirit to the HDI but grounded in \textbf{utility theory}.
   \itemvso They aim to include aspects of life that GDP misses, focusing on:
   \begin{itemize}
     \itemvso \textbf{Consumption} – what people actually enjoy, not just produce,
@@ -1301,30 +1304,89 @@ Wine bottles & 6 & \(120{,}000\ \mathrm{Kz}\)
 \end{itemize}
 \end{frame}
 
-% -------------------------
-\begin{frame}{Individual Utility in Jones \& Klenow (2016)}
+\begin{frame}{Consumption and Utility}
+
 \begin{itemize}
-  \item Each individual derives utility from:
-  \begin{itemize}
-    \itemvso \textbf{Consumption} (\(c\)): goods and services enjoyed,
-  \end{itemize}
+    \item Consumption matters because goods and services contribute to people's well-being.
 
-  \itemvso Utility is modeled as:
-  \[
-  u(c)
-  =
- \frac{c^{1-\sigma}}{1-\sigma}
-  \]
+    \itemvso A \textbf{utility function}, \(u(c)\), represents how consumption \(c\) contributes to well-being.
 
-  \item Key parameters:
-  \begin{itemize}
-    \item \(\bar{u}\): baseline utility from being alive,
-    \item \(\sigma\): risk aversion (how much people dislike inequality and uncertainty),
-    \item \(\theta\): importance of leisure.
-  \end{itemize}
+    \itemvso We will use two simple assumptions:
+    \begin{itemize}
+        \itemvso \textbf{More is better:} higher consumption increases utility.
+        \itemvso \textbf{Diminishing marginal utility:} an extra unit of consumption adds less to utility when consumption is already high.
+    \end{itemize}
 
-  \itemvso Being dead gives utility \(0\) by convention.
+    \itemvso A simple example is:
+    \[
+        u(c) = \log c.
+    \]
+
+    \itemvso Consuming one more unit of consumption matters more to someone who initially consumes very little.
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Utility and Inequality}
+
+\begin{itemize}
+    \item Consider two societies, each with two otherwise identical people:
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline
+ & Person A & Person B & Average consumption \\
+\hline
+Equal consumption   & 10 & 10 & 10 \\
+Unequal consumption & 5  & 15 & 10 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+    \itemvso Average consumption is the same. But what if we evaluate welfare using \textbf{average utility}?
+
+    \itemvso With \(u(c)=\log c\), the equal society has higher average utility:
+    \[
+        \log 10
+        >
+        \frac{1}{2}\log 5 + \frac{1}{2}\log 15.
+    \]
+
+    \itemvso Transferring a unit of consumption from the richer person to the poorer person raises utility more for the poorer person than it lowers it for the richer person.
+
+    \itemvso Average consumption alone can therefore misses the welfare cost of inequality.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{How Much Does Inequality Matter?}
+
+\begin{itemize}
+    \item The welfare cost of inequality depends on how quickly marginal utility falls as consumption rises.
+
+    \itemvso A common family of utility functions lets us vary this curvature:
+    \[
+        u(c)=
+        \begin{cases}
+            \displaystyle\frac{c^{1-\sigma}-1}{1-\sigma},
+            & \sigma \neq 1, \\[0.6em]
+            \log c,
+            & \sigma = 1.
+        \end{cases}
+    \]
+
+    \itemvso The parameter \(\sigma \geq 0\) controls how much curvature we assume:
+    \begin{itemize}
+        \item \(\sigma=0\): linear utility, so only average consumption matters.
+        \itemvso \(\sigma=1\): log utility, as in our previous example.
+        \itemvso Higher \(\sigma\): a larger welfare cost of inequality, holding average consumption fixed.
+    \end{itemize}
+
+    \itemvso When consumption is uncertain, \(\sigma\) also measures \textbf{relative risk aversion}.
+\end{itemize}
+
 \end{frame}
 % -------------------------
 
