@@ -49,7 +49,7 @@ COMPONENTS = [
     'net_exports',
 ]
 COMPONENT_LABELS = {
-    'household_consumption': 'Households',
+    'household_consumption': 'Consumption',
     'government_consumption': 'Government',
     'investment': 'Investment',
     'net_exports': 'Net exports',

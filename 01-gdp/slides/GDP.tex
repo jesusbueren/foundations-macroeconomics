@@ -763,15 +763,10 @@ $\quad\longrightarrow\quad$
     \itemvso Spending and workers move towards other goods: manufactured goods and services.
 \end{enumerate}
 
-\vfill
-\begin{center}
-\hyperlink{structural-change-game}{\beamergotobutton{Play the structural-change game}}
-\end{center}
 
 \end{frame}
 
 \begin{frame}{Income Approach: Who Receives GDP?}
-\hypertarget{after-structural-change-game}{}
 
 \begin{center}
 \includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
@@ -791,7 +786,7 @@ $\quad\longrightarrow\quad$
 
 \end{frame}
 
-\begin{frame}{Labor's Share Has Fallen Unevenly}
+\begin{frame}{The Fall in the Labor's Share}
 
 \begin{center}
 \includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
@@ -800,19 +795,18 @@ $\quad\longrightarrow\quad$
 
 \end{frame}
 
-\begin{frame}{Technology Is the Leading Explanation---but Not the Only One}
+\begin{frame}{Why Has the Labor Share Fallen?}
 
 \begin{itemize}
-    \item Recent surveys organize the explanations into five groups: technology, product markets, labor markets, capital markets, and globalization.
-    \itemvso The leading interpretation is \textbf{capital-augmenting technology and automation}: machines and software perform more tasks previously done by workers.
-    \itemvso Technology may also reshape product markets by favoring large, capital-intensive firms with lower labor shares.
-    \itemvso Markups, globalization, and workers' bargaining power remain possible competing or complementary channels.
+    \item \textbf{Leading explanation: technology.}
+    Machines and software take over tasks previously done by workers.
+
+    \itemvso \textbf{Other forces may also matter:}
+    firms' market power, globalization, and workers' bargaining power.
 \end{itemize}
 
-
-% Sources: Karabarbounis (2024), Journal of Economic Perspectives;
-% Grossman and Oberfield (2022), Annual Review of Economics.
 \end{frame}
+
 
 \begin{frame}{Expenditure Approach: Who Buys the Final Output?}
 
@@ -1384,7 +1378,6 @@ Unequal consumption & 5  & 15 & 10 \\
         \itemvso Higher \(\sigma\): a larger welfare cost of inequality, holding average consumption fixed.
     \end{itemize}
 
-    \itemvso When consumption is uncertain, \(\sigma\) also measures \textbf{relative risk aversion}.
 \end{itemize}
 
 \end{frame}
@@ -1402,12 +1395,10 @@ Unequal consumption & 5  & 15 & 10 \\
 
   \itemvso When choosing, Pat the Alien does not know which individual they will be:
   \begin{itemize}
-    \itemvsoo a banker in Chiado or a waiter in Alfama,
-    \itemvso a surfer in Ericeira or a stressed consultant in Lisbon,
-    \itemvso alive or dead.
+    \itemvso if choosing Portugal:a surfer in Ericeira or a stressed consultant in Lisbon,
+    \itemvso if choosing the U.S.: a tech worker in Silicon Valley or a farmer in Iowa.
   \end{itemize}
-
-  \itemvso In other words, Pat chooses under \textbf{uncertainty}.
+  \itemvso In other words, Pat chooses under the veil of ignorance (John Rawls, 1971).
   \itemvso We need a way to quantify which country would be preferred: expected utility.
 \end{itemize}
 \end{frame}
@@ -1415,7 +1406,7 @@ Unequal consumption & 5  & 15 & 10 \\
 % -------------------------
 \begin{frame}{Expected Utility Across Individuals}
 \begin{itemize}
-  \item Pat the Alien knows the possible outcomes in each country (consumption, leisure, life expectancy) but not which one he will experience.
+  \item Pat the Alien knows the possible outcomes in each country but not which one he will experience.
   \itemvso Examples:
   \begin{itemize}
     \item Ana or João in Portugal,
@@ -1431,18 +1422,6 @@ Unequal consumption & 5  & 15 & 10 \\
   \]
 
   \item This is a simple application of \textbf{expected utility theory}: uncertain outcomes are evaluated by weighting each possible utility by its probability.
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}{The Role of Risk Aversion (\(\sigma\)) in Utility}
-\begin{itemize}
-  \item In expected utility theory, people's attitudes toward risk are captured by the \textbf{concavity of the utility function}.
-  \itemvso We use concavity in models to capture the idea that \textbf{most people dislike uncertainty} and therefore Pat the alien would prefer countries with lower inequality.
-  \itemvso Mathematically, holding leisure (\(\ell\)) and life status (\(a\)) constant, utility is a function of consumption \(c\):
-  \[
-  u(c) = \frac{c^{1-\sigma}}{1-\sigma}
-  \]
 \end{itemize}
 \end{frame}
 
@@ -1491,44 +1470,6 @@ Unequal consumption & 5  & 15 & 10 \\
 \end{frame}
 
 
-\begin{frame}{The Value of Life Expectancy (\(\bar{u}\))}
-\begin{itemize}
-  \item Pat the Alien does not know is he will be dead or alive.
-  \itemvso Suppose Pat's age is randomly drawn from 0 to 100:
-  \begin{itemize}
-    \itemvso If his age exceeds life expectancy in the country, he is dead → utility = 0
-    \itemvso If he is alive → utility = \(\bar{u} + \frac{c^{1-\sigma}}{1-\sigma} - \theta(1-\ell)^2\)
-  \end{itemize}
-  \itemvso Everyone alive gets the baseline utility \(\bar{u}\) in addition to consumption and leisure utility.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{The Value of Leisure and Non-Market Production (\(\theta\))}
-
-\begin{itemize}
-  \item People can spend their time in different ways:
-  \begin{itemize}
-    \item Market work → counted in GDP
-    \item Non-market activities → not counted in GDP (cleaning, cooking, childcare)
-    \item Pure leisure → reading, watching TV, surfing, etc.
-  \end{itemize}
-
-  \itemvso In our utility function, \( \ell \) is the fraction of time spent on non-market and leisure activities.
-
-  \itemvso The parameter \(\theta\) captures how much people value non-market activities (or dislike market work).
-
-  \itemvso How can we measure \(\theta\)?
-  \begin{itemize}
-    \item Look at trade-offs people make between consumption and free time
-    \item Use choices like labor force participation, retirement age, weekly work hours, holidays
-    \item Higher \(\theta\) → people work less, enjoy more leisure and non-market activities
-  \end{itemize}
-
-  \itemvso By matching observed time allocation between market and non-market activities, we can estimate \(\theta\).
-\end{itemize}
-\end{frame}
-
-
 \begin{frame}{Comparing Living Standards Across Countries: Intuition}
 
 \begin{itemize}
@@ -1536,9 +1477,9 @@ Unequal consumption & 5  & 15 & 10 \\
   
   \itemvso Expected utility is great for theory, but \emph{utiles are abstract}. Students, policymakers, and citizens care about consumption, leisure, and life expectancy in \textbf{familiar units}.
   
-  \itemvso Enter \(\lambda^{PT}\): a \textbf{consumption scaling factor} for the U.S. that makes a random resident just as happy as in Portugal:
+  \itemvso Enter \(\lambda^{PT}\): a \textbf{consumption scaling factor} that makes a random resident in the US just as happy as in Portugal as a randomn resident in Portugal:
   \[
-   \dfrac{1}{N}\sum_{i=1}^n u(\lambda^{PT} c_i^{US}, \ell_i^{US}, a_i^{US}) = U^{PT}
+   \dfrac{1}{N}\sum_{i=1}^n u(\lambda^{PT} c_i^{US}) = U^{PT}
   \]
   \vspace{-1.5em}
   \itemvso Intuition:
@@ -1555,12 +1496,12 @@ Unequal consumption & 5  & 15 & 10 \\
 \begin{itemize}
   \item Step 1: Compute the expected utility in Portugal:
   \[
-  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(c_i^{PT}, \ell_i^{PT}, a_i^{PT})
+  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(c_i^{PT})
   \]
   \vspace{-1.5em}
   \item Step 2: Solve for \(\lambda^{PT}\) in:
   \[
-  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(\lambda^{PT} c_i^{US}, \ell_i^{US}, a_i^{US})
+  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(\lambda^{PT} c_i^{US})
   \]
   \vspace{-1.5em}
   \item Step 3: Interpret \(\lambda\):
@@ -1601,7 +1542,7 @@ Unequal consumption & 5  & 15 & 10 \\
   \itemvso \textbf{Jones \& Klenow (2016):}
   \begin{itemize}
     \itemvso Grounded in utility theory—parameters explicitly defined
-    \itemvso Incorporates consumption, leisure, life expectancy, and inequality
+    \itemvso Can also incorporate other factors such as health, leisure, and nonmarket production but you need to think first how they affect utility.
     \itemvso Assumptions are explicit: if you disagree, you can modify the model
     \itemvso Provides a number (\(\lambda\)) that is interpretable and based on the model structure
   \end{itemize}
@@ -1610,7 +1551,7 @@ Unequal consumption & 5  & 15 & 10 \\
 \end{frame}
 
 
-\begin{frame}{Takeaways for Economic Research}
+\begin{frame}{The Role of Models in Economics}
 
 \begin{itemize}
   \item Models are simplifications of reality, just like a map is a simplification of geography
@@ -1621,11 +1562,11 @@ Unequal consumption & 5  & 15 & 10 \\
     \itemvso We can propose improvements and extensions
   \end{itemize}
   
-  \itemvso If you see a missing feature in current research:
+  \itemvso If you see a missing feature:
   \begin{itemize}
-    \itemvso Try writing a model that incorporates it
+    \itemvso Try thinking of a model that incorporates it
     \itemvso Analyze whether it makes a difference
-    \itemvso This is the essence of research in economics: theory + data + clear assumptions
+    \itemvso This is the essence of good economics: theory + data + clear assumptions
   \end{itemize}
   
 \end{itemize}
@@ -1670,183 +1611,6 @@ Unequal consumption & 5  & 15 & 10 \\
 %\includegraphics[width=1.0\linewidth]{figures/US_expenditure_WIDE.pdf}
 %\end{frame}
 
-\appendix
-\section{Appendix}
-\begingroup
-\setbeamertemplate{footline}{}
 
-\begin{frame}[noframenumbering]{Game: Ten Workers, Three Sectors - Round 1}
-\hypertarget{structural-change-game}{}
-\small
-
-\begin{block}{Your task}
-Your economy has \textbf{10 workers}. Allocate every worker to agriculture,
-manufacturing, or services to maximize household utility.
-\end{block}
-
-\begin{columns}[T,onlytextwidth]
-\column{0.42\textwidth}
-\textbf{Production in Round 1}
-
-\medskip
-
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{One worker in} & \textbf{Produces} \\
-\midrule
-Agriculture   & 1 unit of food \\
-Manufacturing & 1 manufactured good \\
-Services      & 1 service \\
-\bottomrule
-\end{tabular}
-
-\medskip
-
-\textbf{Output} = workers $\times$ output per worker.
-
-\column{0.54\textwidth}
-\textbf{Household preferences}
-
-\medskip
-
-\begin{tabular}{@{}lr@{}}
-\toprule
-\textbf{Consumption} & \textbf{Utility points} \\
-\midrule
-Food units 1--6 & 3 each \\
-Additional food & 0 \\
-Manufactured goods 1--6 & 2 each \\
-Additional goods & 0 \\
-Every service & 1 each \\
-\bottomrule
-\end{tabular}
-
-\end{columns}
-
-\medskip
-
-\begin{alertblock}{Submit one answer for your team}
-Report the number of workers in each sector, the resulting quantities of food,
-goods, and services, and your \textbf{total utility points}. Surplus food or
-goods earns no points.
-\end{alertblock}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Game: Ten Workers, Three Sectors - Round 2}
-\small
-
-\begin{block}{Agricultural productivity has doubled}
-Your economy still has \textbf{10 workers}. Reallocate every worker to maximize
-household utility under the new production technology.
-\end{block}
-
-\begin{columns}[T,onlytextwidth]
-\column{0.42\textwidth}
-\textbf{Production in Round 2}
-
-\medskip
-
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{One worker in} & \textbf{Produces} \\
-\midrule
-Agriculture   & \textbf{2 units of food} \\
-Manufacturing & 1 manufactured good \\
-Services      & 1 service \\
-\bottomrule
-\end{tabular}
-
-\medskip
-
-\textbf{Output} = workers $\times$ output per worker.
-
-\column{0.54\textwidth}
-\textbf{Household preferences}
-
-\medskip
-
-\begin{tabular}{@{}lr@{}}
-\toprule
-\textbf{Consumption} & \textbf{Utility points} \\
-\midrule
-Food units 1--6 & 3 each \\
-Additional food & 0 \\
-Manufactured goods 1--6 & 2 each \\
-Additional goods & 0 \\
-Every service & 1 each \\
-\bottomrule
-\end{tabular}
-
-\end{columns}
-
-\medskip
-
-\begin{alertblock}{Submit one answer for your team}
-Report the number of workers in each sector, the resulting quantities of food,
-goods, and services, and your \textbf{total utility points}. Surplus food or
-goods earns no points.
-\end{alertblock}
-\end{frame}
-
-\begin{frame}[noframenumbering]{Game: Ten Workers, Three Sectors - Round 3}
-\small
-
-\begin{block}{Productivity rises again}
-Your economy still has \textbf{10 workers}. Reallocate every worker to maximize
-household utility under the new production technology.
-\end{block}
-
-\begin{columns}[T,onlytextwidth]
-\column{0.42\textwidth}
-\textbf{Production in Round 3}
-
-\medskip
-
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{One worker in} & \textbf{Produces} \\
-\midrule
-Agriculture   & \textbf{3 units of food} \\
-Manufacturing & \textbf{2 manufactured goods} \\
-Services      & 1 service \\
-\bottomrule
-\end{tabular}
-
-\medskip
-
-\textbf{Output} = workers $\times$ output per worker.
-
-\column{0.54\textwidth}
-\textbf{Household preferences}
-
-\medskip
-
-\begin{tabular}{@{}lr@{}}
-\toprule
-\textbf{Consumption} & \textbf{Utility points} \\
-\midrule
-Food units 1--6 & 3 each \\
-Additional food & 0 \\
-Manufactured goods 1--6 & 2 each \\
-Additional goods & 0 \\
-Every service & 1 each \\
-\bottomrule
-\end{tabular}
-
-\end{columns}
-
-\medskip
-
-\begin{alertblock}{Submit one answer for your team}
-Report the number of workers in each sector, the resulting quantities of food,
-goods, and services, and your \textbf{total utility points}. Surplus food or
-goods earns no points.
-\end{alertblock}
-
-\begin{center}
-\hyperlink{after-structural-change-game}{\beamerreturnbutton{Return to the lecture}}
-\end{center}
-\end{frame}
-\endgroup
 
 \end{document}
