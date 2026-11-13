@@ -25,19 +25,87 @@
 \end{frame}
 
 \section{GDP}
-\subsection{GDP Accounting}
-\begin{frame}{GDP Accounting}
+\subsection{Why Measure GDP?}
+
+\begin{frame}{What would we really like to measure?}
 \begin{itemize}
-\item One of the basic questions economists are interested in, when analyzing a country, is how much is produced in that country in a given year
-\itemvso The basic measure of this is a country's gross domestic product (GDP)
-\itemvso The idea is simple: to record the value of everything that is produced in the country in a year and add it up
-\itemvso GDP accounts can be constructed in three different (but equivalent) ways, based on measuring:
-\begin{enumerate}
-\itemvso production
-\itemvso income
-\itemvso expenditures
-\end{enumerate} 
+    \item Our ultimate interest is \textbf{welfare}: how well people are able to live.
+    \item Welfare is multidimensional: health, consumption, education, security,
+          relationships, leisure, freedom, and the environment all matter.
+    \item There is no natural unit in which to add these dimensions, and people
+          need not assign them the same weights.
 \end{itemize}
+
+\medskip
+
+\begin{block}{So why begin with GDP?}
+GDP per person is measurable, comparable across countries and time, and strongly
+associated with many outcomes that people value.
+\end{block}
+\end{frame}
+
+\begin{frame}{Do people in richer countries live longer?}
+\centering
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/welfare-life-expectancy.pdf}
+\end{frame}
+
+\begin{frame}{Are people in richer countries more satisfied with their lives?}
+\centering
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/welfare-life-evaluation.pdf}
+\end{frame}
+
+\begin{frame}{Do more children survive in richer countries?}
+\centering
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/welfare-under-five-mortality.pdf}
+\end{frame}
+
+\begin{frame}{Can households consume more in richer countries?}
+\centering
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/welfare-consumption.pdf}
+\end{frame}
+
+\begin{frame}{GDP is a useful proxy, not welfare itself}
+\begin{itemize}
+    \item GDP per person is closely associated with material consumption,
+          longer lives, child survival, and life satisfaction.
+    \item The gains tend to become smaller at higher income levels.
+    \item Countries with similar GDP can still deliver different outcomes.
+    \item These are cross-country correlations, not proof that GDP alone causes
+          better lives.
+\end{itemize}
+
+\medskip
+
+\begin{block}{Our working position}
+GDP is an informative starting point for measuring economic performance---but
+never the complete scorecard for social welfare.
+\end{block}
+\end{frame}
+
+\subsection{GDP Accounting}
+\begin{frame}{GDP Accounting: Our Roadmap}
+We now turn from motivation to measurement. We will ask:
+
+\begin{enumerate}
+    \itemvso \textbf{How is GDP computed?}
+
+    We will build GDP using production, income, and expenditure---three
+    different but equivalent approaches.
+
+    \itemvso \textbf{What does GDP actually measure?}
+
+    We will clarify what is included, what is excluded, and how GDP should be
+    interpreted.
+
+    \itemvso \textbf{How can we compare GDP across countries?}
+
+    We will explain GDP at purchasing power parity (PPP) and why differences
+    in national price levels matter.
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{US GDP in 2017}
@@ -169,12 +237,13 @@ Beer production & 1 & João’s income & 1 & Ana Maria's consumption & 1 \\
 \end{itemize}
 \end{frame}
 
-\begin{frame}{ The Sandwich Economy}
+\begin{frame}{The Pastel de Nata Economy}
 \begin{itemize}
-    \item Alice owns a company that makes mayonnaise. She pays Bob \$0.50 to mix eggs and oil all day.  
-    \itemvso The company sells the mayo to Carol, who runs a sandwich shop, for \$0.80.  
-    \itemvso Carol uses the mayo to make a delicious sandwich, which she sells to Daniel for \$1.  
-    \itemvso Daniel eats the sandwich (and contributes nothing further to GDP).
+    \item Alice owns a company that makes cream filling. She pays Bob \$0.50
+    to mix milk, eggs, and sugar.
+    \itemvso The company sells the filling to Carol, who runs a pastelaria, for \$0.80.
+    \itemvso Carol uses the filling to bake a pastel de nata, which she sells to Daniel for \$1.
+    \itemvso Daniel eats the pastel de nata (and contributes nothing further to GDP).
 \end{itemize}
 \begin{table}[ht!]
 \centering
@@ -188,8 +257,8 @@ Beer production & 1 & João’s income & 1 & Ana Maria's consumption & 1 \\
 \multicolumn{2}{c}{\textbf{Income}} & 
 \multicolumn{2}{c}{\textbf{Expenditure}} \\
 \midrule
-Manufacturing (mayo) & 0.8 & Wages (Bob) & 0.5 & Consumption (sandwich) & 1.0 \\
-Services (sandwich shop) & 0.2 & Profits (Alice) & 0.3 &  &  \\
+Manufacturing (filling) & 0.8 & Wages (Bob) & 0.5 & Consumption (pastel de nata) & 1.0 \\
+Services (pastelaria) & 0.2 & Profits (Alice) & 0.3 &  &  \\
  &  & Proprietor income (Carol) & 0.2 &  &  \\
 \midrule
 \textbf{Total} & \textbf{1.0} & \textbf{Total} & \textbf{1.0} & \textbf{Total} & \textbf{1.0} \\
@@ -201,12 +270,13 @@ Services (sandwich shop) & 0.2 & Profits (Alice) & 0.3 &  &  \\
 
 \begin{frame}{Avoiding Double Counting}
 \begin{itemize}
-    \itemvso It would be a \textbf{mistake} to add the value of the mayonnaise to the value of the sandwich, 
-    because the mayonnaise was \textbf{used up} in making the sandwich.
+    \itemvso It would be a \textbf{mistake} to add the value of the filling to
+    the value of the pastel de nata, because the filling was \textbf{used up}
+    in making the pastel de nata.
 
     
-    \itemvso The \textbf{value added} by the sandwich shop is the difference between the 
-    final value of the sandwich (\$1) and the value of the mayonnaise (\$0.80):
+    \itemvso The \textbf{value added} by the pastelaria is the difference between
+    the final value of the pastel de nata (\$1) and the value of the filling (\$0.80):
    \begin{align*}
    \text{Value added (Carol)} = 1.00 - 0.80 = 0.20
    \end{align*}    
@@ -624,51 +694,167 @@ Gross profits = net profits + depreciation = 20 + 20 = 40
 
 
 
-\begin{frame}{GDP Composition}
+\begin{frame}{The Same GDP Total Offers Three Different Views}
+\begin{center}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{@{}p{0.18\linewidth}p{0.31\linewidth}p{0.40\linewidth}@{}}
+\toprule
+\textbf{Approach} & \textbf{Question} & \textbf{What it reveals} \\
+\midrule
+\textbf{Production} & What is produced? & The economy's sectoral structure and how it changes with development \\
+\textbf{Income} & Who receives the income? & The division of GDP between labor, capital, and taxes \\
+\textbf{Expenditure} & Who buys the final output? & The roles of households, firms, government, and the rest of the world \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\medskip
+
+\begin{block}{One economy, three lenses}
+Each approach measures the same GDP, but highlights a different part of how the
+economy is organized.
+\end{block}
+\end{frame}
+
+\begin{frame}{Production Approach: What Do Economies Produce?}
 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{figures/GDPxcountries2.pdf}
+\includegraphics[width=0.94\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/production-composition-selected-countries.pdf}
 \end{center}
 
 \end{frame}
 
-\begin{frame}{GDP Composition}
+\begin{frame}{Production Structure Changes with Income}
 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{figures/gdp_agri_serv.pdf}
+\includegraphics[width=0.98\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/production-structure-and-income.pdf}
 \end{center}
 
 \end{frame}
 
-\begin{frame}{GDP Composition}
+\begin{frame}{As Economies Develop, Work Moves Across Sectors}
+\begin{center}
+\large
+\textbf{Agriculture}
+$\quad\longrightarrow\quad$
+\textbf{Manufacturing}
+$\quad\longrightarrow\quad$
+\textbf{Services}
+\end{center}
+
+
+
+\begin{itemize}
+\itemvso[] Structural change:
+\itemvso Economic development changes what economies produce and where people work.
+
+\end{itemize}
+% Sources: Kuznets (1966); Herrendorf, Rogerson, and Valentinyi (2014).
+\end{frame}
+
+\begin{frame}{Why Do Workers Leave Agriculture?}
+\begin{enumerate}
+    \item Better machines and seeds raise output per farm worker.
+    \itemvso More food can be produced with fewer workers, and food becomes cheaper.
+    \itemvso But there is a limit to how much people want to eat. Food demand does
+    not rise as fast as income.
+    \itemvso Spending and workers move towards other goods: manufactured goods and services.
+\end{enumerate}
+
+
+\end{frame}
+
+\begin{frame}{Income Approach: Who Receives GDP?}
 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{figures/GDPxcountries3.pdf}
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/income-approach-composition.pdf}
 \end{center}
 
 \end{frame}
 
-\begin{frame}{GDP Composition}
+\begin{frame}{Most GDP Is Paid to Labor}
+
+\begin{itemize}
+    \item Labor income is the largest component in every country: about 54--59\% of GDP at market prices.
+    \itemvso Portugal, France, and Germany have similar splits between labor, capital, and taxes.
+    \itemvso The United States stands out for a larger capital share (39\%) and lower net production taxes (6\%).
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{The Fall in the Labor's Share}
 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{figures/GDPxcountries1.pdf}
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/income-labor-share-trends.pdf}
 \end{center}
+
+\end{frame}
+
+\begin{frame}{Why Has the Labor Share Fallen?}
+
+\begin{itemize}
+    \item \textbf{Leading explanation: technology.}
+    Machines and software take over tasks previously done by workers.
+
+    \itemvso \textbf{Other forces may also matter:}
+    firms' market power, globalization, and workers' bargaining power.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Expenditure Approach: Who Buys the Final Output?}
+
+\centering
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/expenditure-composition-selected-countries.pdf}
+
+\end{frame}
+
+\begin{frame}{Consumption Dominates, but the Mix Differs}
+
+\begin{itemize}
+    \item \textbf{Household consumption is the largest component} in every country,
+          ranging from about 53\% of GDP in Germany to 68\% in the United States.
+    \itemvso \textbf{Investment is remarkably similar}: around 20--22\% of GDP in all
+          four countries.
+    \itemvso \textbf{Government consumption is larger} in France and Germany than in
+          Portugal and the United States.
+    \itemvso \textbf{Net exports can be positive or negative}: Germany and Portugal
+          export more than they import, while the United States and France import more.
+\end{itemize}
 
 \end{frame}
 
 
 \subsection{Making Comparisons}
 
-\begin{frame}{Making Comparisons: Nominal vs. Real GDP}
+\subsubsection{Across time}
+\begin{frame}{Is the Economy Producing More?}
 
 \begin{itemize}
-\item We often want to compare GDP levels not just shares:
-  \begin{itemize}
-  \itemvso Across \textbf{time} (e.g., 2017 vs. 2025)
-    \itemvso Across \textbf{countries} (e.g., Portugal vs. Denmark)
-  \end{itemize}
-\itemvso But: GDP is measured in local currency (€, \$, ¥...), and prices differ across space and time.
-\itemvso So the same amount of money can buy \textbf{more or less stuff}.
+    \item GDP measures the value of production:
+    \[
+    \text{GDP} = \text{prices} \times \text{quantities}.
+    \]
+
+    \itemvso If GDP increases, this may be because:
+    \begin{itemize}
+        \item more goods and services were produced;
+        \item prices increased;
+        \item or both.
+    \end{itemize}
+
+    \itemvso To determine whether the economy is actually producing more, we must
+    \textbf{separate changes in quantities from changes in prices}.
+
+    \itemvso This is the distinction between \textbf{nominal GDP} and
+    \textbf{real GDP}.
 \end{itemize}
 
 \end{frame}
@@ -738,9 +924,9 @@ In the previous example:
 \textbf{Question:}  
 How do we measure the growth of total production when both quantities and prices move in different directions?
 
-\begin{center}
-\textit{Hint:} Use a base year to keep prices fixed!
-\end{center}
+\begin{itemize}
+\itemvso[]$\Rightarrow$ Use a base year to keep prices fixed
+\end{itemize}
 
 \end{frame}
 
@@ -861,36 +1047,40 @@ Chaining allows comparison across many years without fixing prices from a distan
 
 \end{frame}
 
-\begin{frame}{Making Comparisons across time}
+\begin{frame}{Nominal and Real GDP in the United States}
 
-\begin{center}
-\includegraphics[width=0.9\linewidth]{figures/US_GDP_nominal_vs_real.pdf}
-\end{center}
+\centering
+\includegraphics[width=0.96\linewidth,height=0.78\textheight,keepaspectratio]
+{figures/US_GDP_nominal_vs_real.pdf}
 
 \end{frame}
+
 %-----------------------------------
 
-\subsection{Comparison Across Countries and PPP}
+\subsubsection{Comparison Across Countries and PPP}
 
 %-----------------------------------
 \begin{frame}{Comparing GDP Across Countries}
 
 \begin{itemize}
-    \item Suppose we want to compare GDP between the US and Mexico in 2018:
+    \item Suppose we want to compare GDP per capita in Portugal and Angola in 2024:
     \begin{table}
-    \resizebox{0.8\linewidth}{!}{%
+    \resizebox{0.86\linewidth}{!}{%
     \begin{tabular}{l r l r}
     \toprule
     Country & GDP & Population & GDP per capita \\
     \midrule
-    United States & 20.5 trillion \$ & 327 million & 62,700 \$ per person \\
-    Mexico & 23.5 trillion pesos & 127 million & 185,000 pesos per person \\
+    Portugal & EUR 289.8 billion & 10.7 million & EUR 27,100 per person \\
+    Angola & Kz 104.0 trillion & 37.9 million & Kz 2.75 million per person \\
     \bottomrule
     \end{tabular}
     }
     \end{table}
 
-    \itemvso Can we say Mexicans produced more output per person than U.S residents? Not yet — the currencies are different!
+    \itemvso Can we conclude that Angola produces more per person because
+    \(2.75\) million is larger than \(27{,}100\)?
+    \itemvso No. Euros and kwanzas are different units, so the numbers are not
+    directly comparable.
 \end{itemize}
 
 \end{frame}
@@ -900,22 +1090,23 @@ Chaining allows comparison across many years without fixing prices from a distan
 \begin{frame}{Using Market Exchange Rates}
 
 \begin{itemize}
-    \item One way to compare GDP is using the market exchange rate (MER):
+    \item One option is to convert both values into U.S. dollars using market
+    exchange rates:
     \[
-        \text{GDP in USD} = \text{GDP in local currency} \times \text{Exchange rate (USD/local)}
+        \text{GDP per capita in US\$}
+        =
+        \frac{\text{GDP per capita in local currency}}
+        {\text{local currency units per US\$}}
     \]
-    \itemvso For Mexico in 2018: $23.5 \text{trillion pesos} \times 0.051 USD/peso \simeq 1.2  \text{trillion USD}$.
-    \itemvso Converted per capita: $1.2  \text{trillion USD} \div 127 \text{million people} \simeq 9,500 \text{USD per person}$.
-    \itemvso Problems with market rates:
+    \itemvso In 2024, the World Bank reports:
     \begin{itemize}
-        \item Exchange rates fluctuate daily and may not reflect domestic prices.
-        \itemvso Non-traded goods (housing, services) are cheaper in developing countries, so MER underestimates real living standards.
+        \item Portugal: about \$29,300 per person.
+        \itemvso Angola: about \$2,720 per person.
     \end{itemize}
+    \itemvso Portugal therefore produces about \(10.8\) times more per person
+    when GDP is converted at market exchange rates.
 \end{itemize}
 
-\begin{block}{Takeaway}
-Market exchange rates give a currency-based comparison, but do not capture what people can actually buy.
-\end{block}
 
 \end{frame}
 
@@ -925,45 +1116,91 @@ Market exchange rates give a currency-based comparison, but do not capture what 
 \begin{frame}{Using Purchasing Power Parity (PPP)}
 
 \begin{itemize}
-    \item PPP adjusts for differences in the cost of living:
+    \item PPP uses a conversion factor based on the prices of comparable goods
+    and services:
     \[
-        \text{GDP in Foreign Country at PPP} = \sum_i p_i^{\text{US}} \cdot q_i^{\text{foreign}}
+        \text{GDP per capita at PPP}
+        =
+        \frac{\text{GDP per capita in local currency}}
+        {\text{PPP conversion factor}}
     \]
-    where \(p_i^{\text{US}}\) is the US price of good \(i\), \(q_i^{\text{foreign}}\) is the foreign quantity.
-    \itemvso For Mexico, PPP-adjusted per capita GDP $\approx$ 18,000 USD, almost double the market-rate conversion.
+    \itemvso In 2024:
+    \begin{itemize}
+        \item Portugal: about 52,500 international dollars per person.
+        \itemvso Angola: about 10,000 international dollars per person.
+    \end{itemize}
+    \itemvso At PPP, Portugal produces about \(5.3\) times more per person.
 \end{itemize}
 
-\begin{block}{Intuition}
-PPP measures what residents could actually buy if they lived in the US. Market exchange rates only tell you the currency value, not purchasing power.
-\end{block}
 
 \end{frame}
 
 %-----------------------------------
-\begin{frame}{PPP Exchange Rates and the Big Mac Index}
+\begin{frame}{Why PPP Changes the Comparison}
 
 \begin{itemize}
-    \item The PPP exchange rate is the rate that makes GDP at market exchange and GDP at PPP coincide:
-    \[
-        \text{PPP exchange rate} = \frac{\text{GDP in dollars at PPP}}{\text{GDP in local currency}}
-    \]
-    \item Fun illustration: \textbf{The Big Mac Index}.
+    \item Domestic services and non-traded goods are cheaper in
+    Angola than in Portugal.
+    \itemvso Market exchange rates give these lower-priced goods and services
+    a small value when Angola's GDP is converted into dollars.
+    \itemvso PPP uses price surveys to value comparable output at a common
+    price level.
+    \itemvso The adjustment is larger for Angola:
     \begin{itemize}
-        \item Compare the price of a Big Mac in the US and abroad.
-        \item Example: if a Big Mac costs \$5 in the US and 50 pesos in Mexico, the implied PPP exchange rate is 1 USD = 10 pesos.
-        \item A playful way to see which currencies are “overvalued” or “undervalued.”
+        \item Angola: PPP GDP per capita is about \(3.7\) times its
+        market-rate value.
+        \itemvso Portugal: PPP GDP per capita is about \(1.8\) times its
+        market-rate value.
     \end{itemize}
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Comparing GDP Across Countries}
+\begin{frame}{Example: Market Exchange Rates and PPP}
+
+\small
+Assume:
+\[
+1\ \mathrm{EUR}=1{,}000\ \mathrm{Kz}.
+\]
+
 \begin{center}
-\includegraphics[width=0.9\linewidth]{figures/GDP_Per_Capita_Comparison.pdf}
+\begin{tabular}{lrrrr}
+\hline
+ & \multicolumn{2}{c}{Angola} & \multicolumn{2}{c}{Portugal} \\
+Good & Quantity & Price & Quantity & Price \\
+\hline
+Haircuts & 60 & \(5{,}000\ \mathrm{Kz}\)
+         & 100 & \(20\ \mathrm{EUR}\) \\
+Wine bottles & 6 & \(120{,}000\ \mathrm{Kz}\)
+           & 10 & \(120\ \mathrm{EUR}\) \\
+\hline
+\end{tabular}
 \end{center}
+
+\vspace{0.25cm}
+
+\textbf{Angola's GDP at the market exchange rate:}
+\[
+60(5{,}000)+6(120{,}000)
+=1{,}020{,}000\ \mathrm{Kz}
+=1{,}020\ \mathrm{EUR}.
+\]
+
+\textbf{Angola's GDP valued at Portugal's prices:}
+\[
+60(20)+6(120)=1{,}920\ \mathrm{EUR}.
+\]
+
+\textbf{Portugal's GDP at its own prices:}
+\[
+100(20)+10(120)=3{,}200\ \mathrm{EUR}.
+\]
+
 \end{frame}
 
-\begin{frame}{Comparing GDP Across Countries}
+
+\begin{frame}{Market Rates and PPP: Portugal and Angola}
 \begin{center}
 \includegraphics[width=0.9\linewidth]{figures/GDP_Per_Capita_PPP_vs_Mkt.pdf}
 \end{center}
@@ -978,14 +1215,16 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 \begin{frame}{Beyond GDP — Measuring Development}
 
 \begin{itemize}
-    \item GDP is a powerful indicator of economic activity, but it does not capture everything we care about.
+    \item As we saw in the in the first set of slides, GDP is a powerful indicator of economic activity, but it does not capture everything we care about.
     \itemvso Economic \textbf{development} involves more than production and income:
     \begin{itemize}
         \item Health and life expectancy
         \item Education and literacy
         \item Access to opportunities and basic services
+        \item Inequality and social inclusion
     \end{itemize}
-    \itemvso Now, we discuss alternative ways to measure well-being and living standards.
+    \itemvso In this last section, we discuss two alternative ways to measure well-being and living standards that explain why microfounded models are useful.
+    \itemvso We will first discuss a non microfounded approach, the Human Development Index (HDI), and then a more recent approach by Jones \& Klenow (2016).
 \end{itemize}
 
 \end{frame}
@@ -1039,6 +1278,7 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 \itemvso Why convert variables into indices?
 \itemvso Why equal weights on the three factors?
 \end{itemize} 
+\itemvso The weights could even be chosen to make a particular country look good, to receive more tourism or foreign aid.
 \end{itemize}
 \end{frame}
 
@@ -1046,47 +1286,100 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 
 \begin{frame}{Beyond GDP: Jones \& Klenow (2016)}
 \begin{itemize}
-  \item Jones \& Klenow propose a \textbf{welfare measure} similar in spirit to the HDI but grounded in \textbf{utility theory}.
+  \item Jones \& Klenow propose instead a \textbf{welfare measure} similar in spirit to the HDI but grounded in \textbf{utility theory}.
   \itemvso They aim to include aspects of life that GDP misses, focusing on:
   \begin{itemize}
     \itemvso \textbf{Consumption} – what people actually enjoy, not just produce,
+    \itemvso \textbf{Inequality} – differences in consumption across people,
     \itemvso \textbf{Leisure and nonmarket production} – time spent outside work counts too,
-    \itemvso \textbf{Life expectancy} – how long people live,
-    \itemvso \textbf{Inequality} – differences in consumption across people.
+    \itemvso \textbf{Life expectancy} – how long people live.
   \end{itemize}
+  \itemvso We are going to explore the first two aspects: consumption and inequality.
 \end{itemize}
 \end{frame}
 
-% -------------------------
-\begin{frame}{Individual Utility in Jones \& Klenow (2016)}
+\begin{frame}{Consumption and Utility}
+
 \begin{itemize}
-  \item Each individual derives utility from:
-  \begin{itemize}
-    \itemvso \textbf{Consumption} (\(c\)): goods and services enjoyed,
-    \itemvso \textbf{Leisure} (\(\ell\)): time not spent working,
-    \itemvso \textbf{Life status} (\(a\)): alive (\(a=1\)) or dead (\(a=0\)).
-  \end{itemize}
+    \item Consumption matters because goods and services contribute to people's well-being.
 
-  \itemvso Utility is modeled as:
-  \[
-  u(c,\ell,a)
-  =
-  \Big(
-  \bar{u}
-  + \frac{c^{1-\sigma}}{1-\sigma}
-  - \theta(1-\ell)^2
-  \Big){a}
-  \]
+    \itemvso A \textbf{utility function}, \(u(c)\), represents how consumption \(c\) contributes to well-being.
 
-  \item Key parameters:
-  \begin{itemize}
-    \item \(\bar{u}\): baseline utility from being alive,
-    \item \(\sigma\): risk aversion (how much people dislike inequality and uncertainty),
-    \item \(\theta\): importance of leisure.
-  \end{itemize}
+    \itemvso We will use two simple assumptions:
+    \begin{itemize}
+        \itemvso \textbf{More is better:} higher consumption increases utility.
+        \itemvso \textbf{Diminishing marginal utility:} an extra unit of consumption adds less to utility when consumption is already high.
+    \end{itemize}
 
-  \itemvso Being dead gives utility \(0\) by convention.
+    \itemvso A simple example is:
+    \[
+        u(c) = \log c.
+    \]
+
+    \itemvso Consuming one more unit of consumption matters more to someone who initially consumes very little.
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Utility and Inequality}
+
+\begin{itemize}
+    \item Consider two societies, each with two otherwise identical people:
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline
+ & Person A & Person B & Average consumption \\
+\hline
+Equal consumption   & 10 & 10 & 10 \\
+Unequal consumption & 5  & 15 & 10 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+    \itemvso Average consumption is the same. But what if we evaluate welfare using \textbf{average utility}?
+
+    \itemvso With \(u(c)=\log c\), the equal society has higher average utility:
+    \[
+        \log 10
+        >
+        \frac{1}{2}\log 5 + \frac{1}{2}\log 15.
+    \]
+
+    \itemvso Transferring a unit of consumption from the richer person to the poorer person raises utility more for the poorer person than it lowers it for the richer person.
+
+    \itemvso Average consumption alone can therefore misses the welfare cost of inequality.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{How Much Does Inequality Matter?}
+
+\begin{itemize}
+    \item The welfare cost of inequality depends on how quickly marginal utility falls as consumption rises.
+
+    \itemvso A common family of utility functions lets us vary this curvature:
+    \[
+        u(c)=
+        \begin{cases}
+            \displaystyle\frac{c^{1-\sigma}-1}{1-\sigma},
+            & \sigma \neq 1, \\[0.6em]
+            \log c,
+            & \sigma = 1.
+        \end{cases}
+    \]
+
+    \itemvso The parameter \(\sigma \geq 0\) controls how much curvature we assume:
+    \begin{itemize}
+        \item \(\sigma=0\): linear utility, so only average consumption matters.
+        \itemvso \(\sigma=1\): log utility, as in our previous example.
+        \itemvso Higher \(\sigma\): a larger welfare cost of inequality, holding average consumption fixed.
+    \end{itemize}
+
+\end{itemize}
+
 \end{frame}
 % -------------------------
 
@@ -1102,12 +1395,10 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 
   \itemvso When choosing, Pat the Alien does not know which individual they will be:
   \begin{itemize}
-    \itemvsoo a banker in Chiado or a waiter in Alfama,
-    \itemvso a surfer in Ericeira or a stressed consultant in Lisbon,
-    \itemvso alive or dead.
+    \itemvso if choosing Portugal:a surfer in Ericeira or a stressed consultant in Lisbon,
+    \itemvso if choosing the U.S.: a tech worker in Silicon Valley or a farmer in Iowa.
   \end{itemize}
-
-  \itemvso In other words, Pat chooses under \textbf{uncertainty}.
+  \itemvso In other words, Pat chooses under the veil of ignorance (John Rawls, 1971).
   \itemvso We need a way to quantify which country would be preferred: expected utility.
 \end{itemize}
 \end{frame}
@@ -1115,7 +1406,7 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 % -------------------------
 \begin{frame}{Expected Utility Across Individuals}
 \begin{itemize}
-  \item Pat the Alien knows the possible outcomes in each country (consumption, leisure, life expectancy) but not which one he will experience.
+  \item Pat the Alien knows the possible outcomes in each country but not which one he will experience.
   \itemvso Examples:
   \begin{itemize}
     \item Ana or João in Portugal,
@@ -1125,24 +1416,12 @@ PPP measures what residents could actually buy if they lived in the US. Market e
   \itemvso Pat will prefer the country that gives the \textbf{highest expected utility}:
   \[
   U = \mathbb{E}\Big[
-  (\bar{u} + \frac{c^{1-\sigma}}{1-\sigma} - \theta (1-\ell)^2) a
+  \frac{c^{1-\sigma}}{1-\sigma}
   \Big]
-  = \frac{1}{N} \sum_{i=1}^N (\bar{u} + \frac{c_i^{1-\sigma}}{1-\sigma} - \theta (1-\ell_i)^2) a_i
+  = \frac{1}{N} \sum_{i=1}^N \frac{c_i^{1-\sigma}}{1-\sigma}
   \]
 
   \item This is a simple application of \textbf{expected utility theory}: uncertain outcomes are evaluated by weighting each possible utility by its probability.
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}{The Role of Risk Aversion (\(\sigma\)) in Utility}
-\begin{itemize}
-  \item In expected utility theory, people's attitudes toward risk are captured by the \textbf{concavity of the utility function}.
-  \itemvso We use concavity in models to capture the idea that \textbf{most people dislike uncertainty} and therefore Pat the alien would prefer countries with lower inequality.
-  \itemvso Mathematically, holding leisure (\(\ell\)) and life status (\(a\)) constant, utility is a function of consumption \(c\):
-  \[
-  u(c) = \frac{c^{1-\sigma}}{1-\sigma}
-  \]
 \end{itemize}
 \end{frame}
 
@@ -1191,44 +1470,6 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 \end{frame}
 
 
-\begin{frame}{The Value of Life Expectancy (\(\bar{u}\))}
-\begin{itemize}
-  \item Pat the Alien does not know is he will be dead or alive.
-  \itemvso Suppose Pat's age is randomly drawn from 0 to 100:
-  \begin{itemize}
-    \itemvso If his age exceeds life expectancy in the country, he is dead → utility = 0
-    \itemvso If he is alive → utility = \(\bar{u} + \frac{c^{1-\sigma}}{1-\sigma} - \theta(1-\ell)^2\)
-  \end{itemize}
-  \itemvso Everyone alive gets the baseline utility \(\bar{u}\) in addition to consumption and leisure utility.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{The Value of Leisure and Non-Market Production (\(\theta\))}
-
-\begin{itemize}
-  \item People can spend their time in different ways:
-  \begin{itemize}
-    \item Market work → counted in GDP
-    \item Non-market activities → not counted in GDP (cleaning, cooking, childcare)
-    \item Pure leisure → reading, watching TV, surfing, etc.
-  \end{itemize}
-
-  \itemvso In our utility function, \( \ell \) is the fraction of time spent on non-market and leisure activities.
-
-  \itemvso The parameter \(\theta\) captures how much people value non-market activities (or dislike market work).
-
-  \itemvso How can we measure \(\theta\)?
-  \begin{itemize}
-    \item Look at trade-offs people make between consumption and free time
-    \item Use choices like labor force participation, retirement age, weekly work hours, holidays
-    \item Higher \(\theta\) → people work less, enjoy more leisure and non-market activities
-  \end{itemize}
-
-  \itemvso By matching observed time allocation between market and non-market activities, we can estimate \(\theta\).
-\end{itemize}
-\end{frame}
-
-
 \begin{frame}{Comparing Living Standards Across Countries: Intuition}
 
 \begin{itemize}
@@ -1236,9 +1477,9 @@ PPP measures what residents could actually buy if they lived in the US. Market e
   
   \itemvso Expected utility is great for theory, but \emph{utiles are abstract}. Students, policymakers, and citizens care about consumption, leisure, and life expectancy in \textbf{familiar units}.
   
-  \itemvso Enter \(\lambda^{PT}\): a \textbf{consumption scaling factor} for the U.S. that makes a random resident just as happy as in Portugal:
+  \itemvso Enter \(\lambda^{PT}\): a \textbf{consumption scaling factor} that makes a random resident in the US just as happy as in Portugal as a randomn resident in Portugal:
   \[
-   \dfrac{1}{N}\sum_{i=1}^n u(\lambda^{PT} c_i^{US}, \ell_i^{US}, a_i^{US}) = U^{PT}
+   \dfrac{1}{N}\sum_{i=1}^n u(\lambda^{PT} c_i^{US}) = U^{PT}
   \]
   \vspace{-1.5em}
   \itemvso Intuition:
@@ -1255,12 +1496,12 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 \begin{itemize}
   \item Step 1: Compute the expected utility in Portugal:
   \[
-  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(c_i^{PT}, \ell_i^{PT}, a_i^{PT})
+  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(c_i^{PT})
   \]
   \vspace{-1.5em}
   \item Step 2: Solve for \(\lambda^{PT}\) in:
   \[
-  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(\lambda^{PT} c_i^{US}, \ell_i^{US}, a_i^{US})
+  U^{PT} = \frac{1}{N} \sum_{i=1}^{N} u(\lambda^{PT} c_i^{US})
   \]
   \vspace{-1.5em}
   \item Step 3: Interpret \(\lambda\):
@@ -1301,7 +1542,7 @@ PPP measures what residents could actually buy if they lived in the US. Market e
   \itemvso \textbf{Jones \& Klenow (2016):}
   \begin{itemize}
     \itemvso Grounded in utility theory—parameters explicitly defined
-    \itemvso Incorporates consumption, leisure, life expectancy, and inequality
+    \itemvso Can also incorporate other factors such as health, leisure, and nonmarket production but you need to think first how they affect utility.
     \itemvso Assumptions are explicit: if you disagree, you can modify the model
     \itemvso Provides a number (\(\lambda\)) that is interpretable and based on the model structure
   \end{itemize}
@@ -1310,7 +1551,7 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 \end{frame}
 
 
-\begin{frame}{Takeaways for Economic Research}
+\begin{frame}{The Role of Models in Economics}
 
 \begin{itemize}
   \item Models are simplifications of reality, just like a map is a simplification of geography
@@ -1321,11 +1562,11 @@ PPP measures what residents could actually buy if they lived in the US. Market e
     \itemvso We can propose improvements and extensions
   \end{itemize}
   
-  \itemvso If you see a missing feature in current research:
+  \itemvso If you see a missing feature:
   \begin{itemize}
-    \itemvso Try writing a model that incorporates it
+    \itemvso Try thinking of a model that incorporates it
     \itemvso Analyze whether it makes a difference
-    \itemvso This is the essence of research in economics: theory + data + clear assumptions
+    \itemvso This is the essence of good economics: theory + data + clear assumptions
   \end{itemize}
   
 \end{itemize}
@@ -1369,5 +1610,7 @@ PPP measures what residents could actually buy if they lived in the US. Market e
 %\centering
 %\includegraphics[width=1.0\linewidth]{figures/US_expenditure_WIDE.pdf}
 %\end{frame}
+
+
 
 \end{document}

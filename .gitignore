@@ -23,6 +23,7 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+**/data/cache/
 
 # Credentials
 .env
